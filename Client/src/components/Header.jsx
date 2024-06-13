@@ -8,7 +8,18 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 function Header(props) {
-  const { sections, title } = props;
+  const sections = [
+    { title: 'Technology', url: '#' },
+    { title: 'Design', url: '#' },
+    { title: 'Culture', url: '#' },
+    { title: 'Business', url: '#' },
+    { title: 'Politics', url: '#' },
+    { title: 'Opinion', url: '#' },
+    { title: 'Science', url: '#' },
+    { title: 'Health', url: '#' },
+    { title: 'Style', url: '#' },
+    { title: 'Travel', url: '#' },
+  ];
 
   return (
     <React.Fragment>
@@ -22,7 +33,7 @@ function Header(props) {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+          Title Goes Here
         </Typography>
         <IconButton>
           <SearchIcon />
@@ -56,11 +67,11 @@ function Header(props) {
 Header.propTypes = {
   sections: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
+      title: PropTypes.string,
+      url: PropTypes.string,
     }),
-  ).isRequired,
-  title: PropTypes.string.isRequired,
+  ),
+  title: PropTypes.string,
 };
 
 export default Header;
