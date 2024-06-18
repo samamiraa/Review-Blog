@@ -1,19 +1,19 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 function Header(props) {
   const sections = [
+    { title: 'All Posts', url: '#' },
     { title: 'Appliances', url: '#' },
     { title: 'Furniture', url: '#' },
     { title: 'Outdoor', url: '#' },
     { title: 'Baby', url: '#' },
     { title: 'Health', url: '#' },
     { title: 'Self Care', url: '#' },
-    { title: 'Technology', url: '#' }
+    { title: 'Technology', url: '#' },
   ];
 
   return (

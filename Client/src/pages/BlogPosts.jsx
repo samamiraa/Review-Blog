@@ -1,4 +1,4 @@
-export default function SignUp() {
+export default function BlogPosts() {
     return (
         <div>
             
